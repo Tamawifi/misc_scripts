@@ -25,12 +25,11 @@ if [ -e "$ZSH" ]; then
     cp .zshrc ~/bk_config
 fi
 
-
 #make backup info file
 cd ~/bk_config
 echo "backup date and dist info" > backupinfo
 date >> backupinfo
-uname -ra > backupinfo
+uname -ra >> backupinfo
 
 #make archive file
 cd ~
